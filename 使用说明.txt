@@ -1,0 +1,7 @@
+自主编写的代码在flex.l中。
+在cmd下运行flex.exe对其处理，生成lex.yy.c文件，具体命令是 flex.exe flex.l
+对lex.yy.c文件进行编译，生成lex.yy.exe文件，
+这就是我们得到的主程序文件。
+在cmd下运行该文件，该程序需要用户传递两个参数，前一个参数是要进行词频统计的文件名，后一个参数存放统计结果的文件名。
+如 lex.yy.exe test1.txt result1.txt
+结果输出到result1.txt中
